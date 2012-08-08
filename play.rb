@@ -5,7 +5,12 @@ require "watir-webdriver"
 browser = Watir::Browser.new :chrome
 browser.goto "http://www.google.com/doodles/hurdles-2012"
 
-# start the game
+# ready set go
+puts "Ready..."
+sleep 2
+puts "Set..."
+sleep 2
+puts "GO!"
 browser.div(id: "hplogo").frame.div.click
 
 # play!
