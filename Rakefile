@@ -1,7 +1,9 @@
-desc "play the game"
-task :default => :play
-
-desc "play the game"
-task :play do
+desc "play hurdles"
+task :hurdles do
   ruby "play.rb"
+end
+
+desc "play basketball"
+task :basketball do
+  ruby "basketball.rb"
 end
