@@ -1,6 +1,6 @@
 desc "play hurdles"
 task :hurdles do
-  ruby "play.rb"
+  ruby "hurdles.rb"
 end
 
 desc "play basketball"
