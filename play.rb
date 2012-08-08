@@ -1,3 +1,13 @@
+def run_and_jump(browser, number)
+  number.times do
+    puts "Run!"
+    browser.send_keys :left
+    browser.send_keys :right
+  end
+  puts "Jump!"
+  browser.send_keys :space
+end
+
 require "bundler/setup"
 require "watir-webdriver"
 
@@ -6,14 +16,15 @@ browser = Watir::Browser.new :chrome
 browser.goto "http://www.google.com/doodles/hurdles-2012"
 
 # ready set go
-puts "Ready..."
-sleep 2
+sleep 5
+puts "\nReady..."
+sleep 1
 puts "Set..."
-sleep 2
-puts "GO!"
 browser.div(id: "hplogo").frame.div.click
+puts "GO!"
 
 # play!
-browser.send_keys :left
-browser.send_keys :right
-browser.send_keys :space
+run_and_jump(browser, 15)
+15.times do
+  run_and_jump(browser, 9)
+end
