@@ -1,4 +1,6 @@
 def go_to_game(name)
+  puts "Go to game."
+
   require "bundler/setup"
   require "watir-webdriver"
 
@@ -7,5 +9,6 @@ def go_to_game(name)
   browser
 end
 def start_the_game(browser)
+  "Go!"
   browser.div(id: "hplogo").frame.div.click
 end
