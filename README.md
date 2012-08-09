@@ -1,6 +1,10 @@
-# Automating Google Hurdles and Basketball 2012
+# Automating Google Hurdles, Basketball and Canoe
 
-The games are located at http://www.google.com/doodles/hurdles-2012 and http://www.google.com/doodles/basketball-2012
+The games are located at:
+
+- http://www.google.com/doodles/hurdles-2012
+- http://www.google.com/doodles/basketball-2012
+- https://www.google.com/doodles/slalom-canoe-2012
 
 Project repository is at https://github.com/zeljkofilipin/olympics
 
@@ -12,4 +16,8 @@ Install required RubyGems:
     gem install bundler
     bundle
 
-Play hurdles with `bundle exec rake hurdles` and basketball with `bundle exec rake basketball`.
+Play the games with:
+
+    bundle exec rake hurdles
+    bundle exec rake basketball
+    bundle exec rake canoe
