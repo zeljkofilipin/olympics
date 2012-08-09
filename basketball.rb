@@ -20,7 +20,7 @@ end
 
 browser = go_to_game
 start_the_game(browser)
-jump_and_shoot(browser, 5, 1, 0.2)
-jump_and_shoot(browser, 4, 1, 0.4)
-jump_and_shoot(browser, 4, 1, 0.6)
-jump_and_shoot(browser, 2, 1, 0.8)
+jump_and_shoot(browser, 5, 0.9, 0.2)
+jump_and_shoot(browser, 4, 0.9, 0.4)
+jump_and_shoot(browser, 4, 0.9, 0.6)
+jump_and_shoot(browser, 2, 0.9, 0.8)
