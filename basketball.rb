@@ -1,11 +1,5 @@
-def go_to_game
-  require "bundler/setup"
-  require "watir-webdriver"
+require_relative "olympics"
 
-  browser = Watir::Browser.new :chrome
-  browser.goto "http://www.google.com/doodles/basketball-2012"
-  browser
-end
 def jump_and_shoot(browser, number_of_balls, wait_before_shooting, time_between_jump_and_shoot)
   number_of_balls.times do
     sleep wait_before_shooting
@@ -14,11 +8,9 @@ def jump_and_shoot(browser, number_of_balls, wait_before_shooting, time_between_
     browser.send_keys :space
   end
 end
-def start_the_game(browser)
-  browser.div(id: "hplogo").frame.div.click
-end
 
-browser = go_to_game
+
+browser = go_to_game("basketball")
 start_the_game(browser)
 jump_and_shoot(browser, 5, 0.9, 0.2)
 jump_and_shoot(browser, 4, 0.9, 0.4)
