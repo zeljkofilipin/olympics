@@ -9,12 +9,15 @@ def go_to_game(name)
   browser
 end
 def left(browser)
+  puts "Left!"
   browser.send_keys :left
 end
 def right(browser)
+  puts "Rigth!"
   browser.send_keys :right
 end
 def space(browser)
+  puts "Space!"
   browser.send_keys :space
 end
 def start_the_game(browser)

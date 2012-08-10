@@ -2,9 +2,7 @@ require_relative "olympics"
 
 def paddle(browser, number)
   number.times do
-    puts "Left!"
     left(browser)
-    puts "Right!"
     right(browser)
   end
 end
