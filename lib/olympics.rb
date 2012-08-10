@@ -21,6 +21,7 @@ def space(browser)
   browser.send_keys :space
 end
 def start_the_game(browser)
+  sleep 1
   puts "\nGo!\n"
   browser.div(id: "hplogo").frame.div.click
 end

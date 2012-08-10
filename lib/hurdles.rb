@@ -12,7 +12,6 @@ browser = go_to_game("hurdles")
 
 # ready set go
 sleep 5
-sleep 1
 start_the_game(browser)
 
 # play!
