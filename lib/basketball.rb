@@ -1,10 +1,10 @@
 require_relative "olympics"
 
 def jump_and_shoot(browser, number_of_balls, wait_before_shooting, time_between_jump_and_shoot)
-  puts
   number_of_balls.times do
     sleep wait_before_shooting
     space(browser)
+    puts "wait #{time_between_jump_and_shoot} s"
     sleep time_between_jump_and_shoot
     space(browser)
   end
