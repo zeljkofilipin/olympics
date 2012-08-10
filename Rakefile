@@ -12,3 +12,8 @@ desc "play canoe"
 task :canoe do
   ruby "lib/canoe.rb"
 end
+
+desc "play soccer"
+task :soccer do
+  ruby "lib/soccer.rb"
+end

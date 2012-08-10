@@ -1,10 +1,11 @@
-# Automating Google Hurdles, Basketball and Canoe
+# Automating Google Hurdles, Basketball, Canoe and Soccer
 
 The games are located at:
 
 - http://www.google.com/doodles/hurdles-2012
 - http://www.google.com/doodles/basketball-2012
 - https://www.google.com/doodles/slalom-canoe-2012
+- https://www.google.com/doodles/soccer-2012
 
 Project repository is at https://github.com/zeljkofilipin/olympics
 
@@ -21,3 +22,4 @@ Play the games with:
     bundle exec rake hurdles
     bundle exec rake basketball
     bundle exec rake canoe
+    bundle exec rake soccer
