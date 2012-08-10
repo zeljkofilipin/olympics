@@ -3,11 +3,11 @@ require_relative "olympics"
 def run_and_jump(browser, number)
   number.times do
     puts "Run!"
-    browser.send_keys :left
-    browser.send_keys :right
+    left(browser)
+    right(browser)
   end
   puts "Jump!"
-  browser.send_keys :space
+  space(browser)
 end
 
 browser = go_to_game("hurdles")

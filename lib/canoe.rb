@@ -3,9 +3,9 @@ require_relative "olympics"
 def paddle(browser, number)
   number.times do
     puts "Left!"
-    browser.send_keys :left
+    left(browser)
     puts "Right!"
-    browser.send_keys :right
+    right(browser)
   end
 end
 

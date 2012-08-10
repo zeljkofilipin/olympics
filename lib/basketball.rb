@@ -3,12 +3,11 @@ require_relative "olympics"
 def jump_and_shoot(browser, number_of_balls, wait_before_shooting, time_between_jump_and_shoot)
   number_of_balls.times do
     sleep wait_before_shooting
-    browser.send_keys :space
+    space(browser)
     sleep time_between_jump_and_shoot
-    browser.send_keys :space
+    space(browser)
   end
 end
-
 
 browser = go_to_game("basketball")
 start_the_game(browser)
