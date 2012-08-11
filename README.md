@@ -23,3 +23,5 @@ Play the games with:
     bundle exec rake basketball
     bundle exec rake canoe
     bundle exec rake soccer
+
+For more information see http://filipin.eu/tag/game/
