@@ -12,7 +12,7 @@ end
 
 browser = go_to_game("basketball")
 start_the_game(browser)
-jump_and_shoot(browser, 5, 0.9, 0.2)
+jump_and_shoot(browser, 5, 0.9, 0.1)
+jump_and_shoot(browser, 4, 0.9, 0.3)
 jump_and_shoot(browser, 4, 0.9, 0.4)
-jump_and_shoot(browser, 4, 0.9, 0.6)
-jump_and_shoot(browser, 3, 0.9, 0.8)
+jump_and_shoot(browser, 3, 0.9, 0.5)
